@@ -11,13 +11,17 @@ def add_entry():
     email = input("Enter email: ")
     phone = int(input("Enter phone no: "))
 
-    dic1.update({name:{'address':add,'email':email,'phone_no':phone}})
+    if name in dic1:
+        dic1[name].append({'address':add,'email':email,'phone_no':phone})
+    else:
+        dic1.update({name:[{'address':add,'email':email,'phone_no':phone}]})
 
 def exit_func(file_name):
     global dic1
     f = open(file_name,'w+')
     for key in dic1:
-        f.write("name: "+key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no'])+'\n')
+        for i in range(dic1[key]):
+            f.write("name: "+key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no'])+'\n')
 
 def find():
     global dic1
@@ -25,27 +29,30 @@ def find():
     for key in dic1:
         for j in range(len(key)):
             if x.capitalize() == key[:j+1]:
-                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+                for i in range(dic1[key]):
+                    print(key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no']))
 
 def find_by_email_or_numbers():
     global dic1
     x = input("Enter email or number: ")
     if x.isdigit():
         for key in dic1:
-            if int(x)==dic1[key]['phone_no']:
-                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
-                break
-            else:
-                print("Phone number not found")
-                break
+            for i in range(dic1[key]):
+                if int(x)==dic1[key][i]['phone_no']:
+                    print(key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no']))
+                    break
+                else:
+                    print("Phone number not found")
+                    break
     else:
         for key in dic1:
-            if x==dic1[key]['email']:
-                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
-                break
-            else:
-                print("Email not found")
-                break
+            for i in range(dic1[key]):
+                if x==dic1[key][i]['email']:
+                    print(key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no']))
+                    break
+                else:
+                    print("Email not found")
+                    break
 
 def merge():
     global dic1
@@ -58,7 +65,7 @@ def merge():
         adds=elements[1].split(': ')
         emails=elements[2].split(': ')
         phones=elements[3].split(':')
-        dic2.update({names[1]:{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}})
+        dic2.update({names[1]:[{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}]})
     dic1.update(dic2)
 
 def delete_entry():
@@ -82,7 +89,9 @@ for i in f1:
     adds=elements[1].split(': ')
     emails=elements[2].split(': ')
     phones=elements[3].split(':')
-    dic1.update({names[1]:{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}})
+    dic1.update({names[1]:[{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}]})
+
+# print(dic1)
 
 flag = True
 while flag:
