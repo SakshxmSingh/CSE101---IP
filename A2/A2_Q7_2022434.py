@@ -1,3 +1,9 @@
+# Saksham Singh
+# 2022434
+# Section B,  Group 7
+# IP Assignment 02
+
+#--------------ques08------------------
 def add_entry():
     global dic1
     name = input("Enter name: ")
