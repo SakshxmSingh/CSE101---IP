@@ -23,32 +23,38 @@ def new_game():
     global word, input_word
     print("-------------WORDLE-------------")
     input_word = input("Enter a five letter word: ")
-    chances = 1
-    while chances < 6 and input_word!=word:
-        correct_places = ['-','-','-','-','-']
-        incorrect_places = []
-        if input_word==word:
-            print("---------!!!!YOU WON!!!!---------")
-            break
-        for i in range(len(input_word)):
-            if input_word[i]==word[i]:
-                correct_places[i] = (input_word[i])
-            elif input_word[i]!=word[i] and input_word[i] in word:
-                incorrect_places.append(input_word[i])
-        print('Letters in correct places: ',end='')
-        for i in correct_places:
-            print(i,end=' ')
-        print()
-        print('Letters in incorrect places but in the word: ',end='')
-        for i in incorrect_places:
-            print(i,end=' ')
-        print()
-        print("No of tries left:",6-chances)
-        print()
+    if len(input_word)!=5:
+        input_word = input("incorrect length, try again: ")
+    else:
+        chances = 1
+        while chances < 6 and input_word!=word:
+            correct_places = ['-','-','-','-','-']
+            incorrect_places = []
+            if input_word==word:
+                print("---------!!!!YOU WON!!!!---------")
+                break
+            for i in range(len(input_word)):
+                if input_word[i]==word[i]:
+                    correct_places[i] = (input_word[i])
+                elif input_word[i]!=word[i] and input_word[i] in word:
+                    incorrect_places.append(input_word[i])
+            print('Letters in correct places: ',end='')
+            for i in correct_places:
+                print(i,end=' ')
+            print()
+            print('Letters in incorrect places but in the word: ',end='')
+            for i in incorrect_places:
+                print(i,end=' ')
+            print()
+            print("No of tries left:",6-chances)
+            print()
 
-        chances+=1
-        input_word = input("try again: ")
-
+            chances+=1
+            input_word = input("try again: ")
+            if len(input_word)!=5:
+                input_word = input("incorrect length, try again: ")
+            else:
+                pass
 
 new_game()
 
