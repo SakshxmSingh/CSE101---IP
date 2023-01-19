@@ -1,0 +1,55 @@
+Saksham:
+Somay, 1
+Pankhuri, 1
+Shaurya, 1
+Elwin, 1
+Pooja, 1
+Vibhuti, 1
+
+Somay:
+Saksham, 1
+Pankhuri, 1
+Shaurya, 1
+Elwin, 0
+Pooja, 0
+Vibhuti, 0
+
+Pankhuri:
+Saksham, 1
+Somay, 1
+Shaurya, 1
+Elwin, 0
+Pooja, 0
+Vibhuti, 1
+
+Shaurya:
+Saksham, 1
+Somay, 1
+Pankhuri, 0
+Elwin, 1
+Pooja, 0
+Vibhuti, 1
+
+Elwin:
+Saksham, 1
+Somay, 0
+Pankhuri, 1
+Shaurya, 1
+Pooja, 1
+Vibhuti, 1
+
+Pooja:
+Saksham, 1
+Somay, 0
+Pankhuri, 0
+Shaurya, 0
+Elwin, 1
+Vibhuti, 0
+
+Vibhuti:
+Saksham, 1
+Somay, 0
+Pankhuri, 1
+Shaurya, 1
+Elwin, 1
+Pooja, 0
