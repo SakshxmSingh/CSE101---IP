@@ -13,6 +13,14 @@ def exit_func(file_name):
     for key in dic1:
         f.write("name: "+key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no'])+'\n')
 
+def find():
+    global dic1
+    input = input("Enter name: ")
+    for key in dic1:
+        for j in key:
+            if input == key[:j+1]:
+                print("name: "+key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+
 def delete_entry():
     global dic1
     while True:
@@ -41,12 +49,15 @@ while flag:
     selector = input("""Enter the operation:
     1. Add entry (a)
     2. Delete entry (d)
-    3. Exit (e)
+    3. Find (f)
+    4. Exit (e)
 """)
     if selector=='a':
         add_entry()
     elif selector=='d':
         delete_entry()
+    elif selector=='f':
+        find()
     elif selector=='e':
         exit_func(file)
         flag = False
