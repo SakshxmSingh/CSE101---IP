@@ -20,7 +20,7 @@ def exit_func(file_name):
     global dic1
     f = open(file_name,'w+')
     for key in dic1:
-        for i in range(dic1[key]):
+        for i in range(len(dic1[key])):
             f.write("name: "+key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no'])+'\n')
 
 def find():
@@ -37,7 +37,7 @@ def find_by_email_or_numbers():
     x = input("Enter email or number: ")
     if x.isdigit():
         for key in dic1:
-            for i in range(dic1[key]):
+            for i in range(len(dic1[key])):
                 if int(x)==dic1[key][i]['phone_no']:
                     print(key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no']))
                     break
@@ -46,7 +46,7 @@ def find_by_email_or_numbers():
                     break
     else:
         for key in dic1:
-            for i in range(dic1[key]):
+            for i in range(len(dic1[key])):
                 if x==dic1[key][i]['email']:
                     print(key+"\t\taddress: "+dic1[key][i]['address']+"\t\temail: "+dic1[key][i]['email']+"\t\tphone_no: "+str(dic1[key][i]['phone_no']))
                     break
@@ -65,8 +65,13 @@ def merge():
         adds=elements[1].split(': ')
         emails=elements[2].split(': ')
         phones=elements[3].split(':')
-        dic2.update({names[1]:[{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}]})
-    dic1.update(dic2)
+        dic2.update({names[1]:{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}})
+    
+    for key in dic2:
+        if key in dic1:
+            dic1[key].append(dic2[key])
+        else:
+            dic1.update({key:[dic2[key]]})
 
 def delete_entry():
     global dic1
