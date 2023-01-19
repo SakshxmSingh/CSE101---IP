@@ -4,7 +4,7 @@
 # IP Assignment 02
 
 #--------------ques03------------------
-file = open("CSE101 - IP/A2/signatures.txt", "r")
+file = open("/Users/saksham/Desktop/Programming/CSE101 - IP/A2/signatures.txt", "r")
 sign_dict = {}
 file_list = []
 for i in file:
