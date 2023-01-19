@@ -17,7 +17,7 @@ words = ['abuse','drama','adult','dream','agent','dress','anger','drink','apple'
          'store','study','stuff','style','sugar','table','taste','theme','thing','title','total','touch','tower','track','trade','train','trend','trial',
          'trust','truth','uncle','union','unity','value','video','visit','voice','waste','watch','water','while','white','whole','woman','world','youth']
 
-word = "hexlo"# random.choice(words)
+word = random.choice(words)
 
 def new_game():
     global word, input_word
@@ -25,14 +25,14 @@ def new_game():
     input_word = input("Enter a five letter word: ")
     chances = 1
     while chances < 6 and input_word!=word:
-        correct_places = []
+        correct_places = ['-','-','-','-','-']
         incorrect_places = []
         if input_word==word:
             print("---------!!!!YOU WON!!!!---------")
             break
         for i in range(len(input_word)):
             if input_word[i]==word[i]:
-                correct_places.append(input_word[i])
+                correct_places[i] = (input_word[i])
             elif input_word[i]!=word[i] and input_word[i] in word:
                 incorrect_places.append(input_word[i])
         print('Letters in correct places: ',end='')
