@@ -15,11 +15,33 @@ def exit_func(file_name):
 
 def find():
     global dic1
-    input = input("Enter name: ")
+    x = input("Enter name: ")
     for key in dic1:
-        for j in key:
-            if input == key[:j+1]:
-                print("name: "+key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+        for j in range(len(key)):
+            if x.capitalize() == key[:j+1]:
+                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+
+def find_by_email_or_numbers():
+    global dic1
+    x = input("Enter email or number: ")
+    if x.isdigit():
+        for key in dic1:
+            if int(x)==dic1[key]['phone_no']:
+                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+                break
+            else:
+                print("Phone number not found")
+                break
+    else:
+        for key in dic1:
+            if x==dic1[key]['email']:
+                print(key+"\t\taddress: "+dic1[key]['address']+"\t\temail: "+dic1[key]['email']+"\t\tphone_no: "+str(dic1[key]['phone_no']))
+                break
+            else:
+                print("Email not found")
+                break
+
+
 
 def delete_entry():
     global dic1
@@ -34,7 +56,7 @@ def delete_entry():
             print("name doesn't exist in address book")
 
 dic1 = {}
-file = "CSE101 - IP/A2/address_book.txt"
+file = "/Users/saksham/Desktop/Programming/CSE101 - IP/A2/address_book.txt"
 f1 = open(file,'r')
 for i in f1:
     elements=i.split('\t\t')
@@ -50,7 +72,8 @@ while flag:
     1. Add entry (a)
     2. Delete entry (d)
     3. Find (f)
-    4. Exit (e)
+    4. Search using phone number or email (s)
+    5. Exit (e)
 """)
     if selector=='a':
         add_entry()
@@ -58,6 +81,11 @@ while flag:
         delete_entry()
     elif selector=='f':
         find()
+    elif selector=='s':
+        find_by_email_or_numbers()
     elif selector=='e':
         exit_func(file)
+        flag = False
+    else:
+        print('invalid input, terminating')
         flag = False
