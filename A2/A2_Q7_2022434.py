@@ -61,7 +61,6 @@ def merge():
         dic2.update({names[1]:{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}})
     dic1.update(dic2)
 
-
 def delete_entry():
     global dic1
     while True:
@@ -93,8 +92,7 @@ while flag:
     3. Find (f)
     4. Search using phone number or email (s)
     5. Merge another address book (m)
-    5. Exit (e)
-""")
+    5. Exit (e)\n""")
     if selector=='a':
         add_entry()
     elif selector=='d':

@@ -5,6 +5,7 @@
 
 #--------------ques04------------------
 import random
+import requests
 words = ['abuse','drama','adult','dream','agent','dress','anger','drink','apple','drive','award','earth','basis','enemy','beach','entry','birth','error',
          'block','event','blood','faith','board','fault','brain','field','bread','fight','break','final','brown','floor','buyer','cause','chain','chair',
          'chest','chief','child','class','clock','coach','coast','court','cover','cream','crime','cross','crowd','crown','cycle','dance','death','depth',
@@ -23,8 +24,11 @@ def new_game():
     global word, input_word
     print("-------------WORDLE-------------")
     input_word = input("Enter a five letter word: ")
+    response = requests.get('https://api.dictionaryapi.dev/api/v2/entries/en/'+input_word)
     if len(input_word)!=5:
         input_word = input("incorrect length, try again: ")
+    elif response.status_code==404:
+        input_word = input("word doesnt exist, try again: ")
     else:
         chances = 1
         while chances < 6 and input_word!=word:
@@ -53,6 +57,8 @@ def new_game():
             input_word = input("try again: ")
             if len(input_word)!=5:
                 input_word = input("incorrect length, try again: ")
+            elif response.status_code==404:
+                input_word = input("word doesnt exist, try again: ")
             else:
                 pass
 
