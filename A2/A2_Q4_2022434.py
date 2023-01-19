@@ -29,38 +29,37 @@ def new_game():
         input_word = input("incorrect length, try again: ")
     elif response.status_code==404:
         input_word = input("word doesnt exist, try again: ")
-    else:
-        chances = 1
-        while chances < 6 and input_word!=word:
-            correct_places = ['-','-','-','-','-']
-            incorrect_places = []
-            if input_word==word:
-                print("---------!!!!YOU WON!!!!---------")
-                break
-            for i in range(len(input_word)):
-                if input_word[i]==word[i]:
-                    correct_places[i] = (input_word[i])
-                elif input_word[i]!=word[i] and input_word[i] in word:
-                    incorrect_places.append(input_word[i])
-            print('Letters in correct places: ',end='')
-            for i in correct_places:
-                print(i,end=' ')
-            print()
-            print('Letters in incorrect places but in the word: ',end='')
-            for i in incorrect_places:
-                print(i,end=' ')
-            print()
-            print("No of tries left:",6-chances)
-            print()
+    
+    chances = 1
+    while chances < 6 and input_word!=word:
+        correct_places = ['-','-','-','-','-']
+        incorrect_places = []
+        if input_word==word:
+            print("---------!!!!YOU WON!!!!---------")
+            break
+        for i in range(len(input_word)):
+            if input_word[i]==word[i]:
+                correct_places[i] = (input_word[i])
+            elif input_word[i]!=word[i] and input_word[i] in word:
+                incorrect_places.append(input_word[i])
+        print('Letters in correct places: ',end='')
+        for i in correct_places:
+            print(i,end=' ')
+        print()
+        print('Letters in incorrect places but in the word: ',end='')
+        for i in incorrect_places:
+            print(i,end=' ')
+        print()
+        print("No of tries left:",6-chances)
+        print()
 
-            chances+=1
-            input_word = input("try again: ")
-            if len(input_word)!=5:
-                input_word = input("incorrect length, try again: ")
-            elif response.status_code==404:
-                input_word = input("word doesnt exist, try again: ")
-            else:
-                pass
+        chances+=1
+        input_word = input("try again: ")
+        response = requests.get('https://api.dictionaryapi.dev/api/v2/entries/en/'+input_word)
+        if len(input_word)!=5:
+            input_word = input("incorrect length, try again: ")
+        elif response.status_code==404:
+            input_word = input("word doesnt exist, try again: ")
 
 new_game()
 
