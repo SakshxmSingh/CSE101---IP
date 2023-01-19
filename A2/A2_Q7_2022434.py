@@ -41,6 +41,19 @@ def find_by_email_or_numbers():
                 print("Email not found")
                 break
 
+def merge():
+    global dic1
+    dic2 = {}
+    file = input("Enter path of file: ")
+    f1 = open(file,'r')
+    for i in f1:
+        elements=i.split('\t\t')
+        names=elements[0].split(': ')
+        adds=elements[1].split(': ')
+        emails=elements[2].split(': ')
+        phones=elements[3].split(':')
+        dic2.update({names[1]:{adds[0]:adds[1],emails[0]:emails[1],phones[0]:int(phones[1])}})
+    dic1.update(dic2)
 
 
 def delete_entry():
@@ -73,6 +86,7 @@ while flag:
     2. Delete entry (d)
     3. Find (f)
     4. Search using phone number or email (s)
+    5. Merge another address book (m)
     5. Exit (e)
 """)
     if selector=='a':
@@ -83,6 +97,8 @@ while flag:
         find()
     elif selector=='s':
         find_by_email_or_numbers()
+    elif selector=='m':
+        merge()
     elif selector=='e':
         exit_func(file)
         flag = False
