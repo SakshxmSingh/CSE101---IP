@@ -5,7 +5,7 @@
 
 #--------------ques06------------------
 wts = [(20,5),(20,5),(100,25),(30,15),(20,5),(20,5),(120,40)]
-file = open('CSE101 - IP/A2/IPmarks.txt', 'r')
+file = open('/Users/saksham/Desktop/Programming/CSE101 - IP/A2/IPmarks.txt', 'r')
 
 d_input = {}
 for i in file:
@@ -38,6 +38,6 @@ for key in d_calculated:
     elif 30>d_calculated[key]:
         d_grades.update({key:'F'})
 
-file_2 = open('CSE101 - IP/A2/IPgrades','w')
+file_2 = open('/Users/saksham/Desktop/Programming/CSE101 - IP/A2/IPgrades','w')
 for key in d_calculated:
     file_2.write(str(key)+', '+str(d_calculated[key])+', '+str(d_grades[key]+'\n'))
