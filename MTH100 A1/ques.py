@@ -23,5 +23,11 @@ def pivot_divide(lst):
         lst=list(map(lambda a: a/lst[0],lst))
     return lst
 
-
 print(pivot_divide(mtx[0]))
+
+# def subtract_down(lst):
+#     pass
+
+# for i in len(range(mtx)):
+#     for j in len(range(mtx[i])):
+#         if mtx[i][j]
