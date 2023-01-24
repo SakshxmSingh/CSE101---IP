@@ -302,7 +302,18 @@ code for any number system conversion from decimal
 # s = input()
 # print(shortest_palindromic_string(s))
 
-f = open('CSE101 - IP/bs.txt','a')
-for i in range(0,60):
-  f.write(str(i)+'\n')
+# f = open('CSE101 - IP/bs.txt','a')
+# for i in range(0,60):
+#   f.write(str(i)+'\n')
   
+
+file = open("/Users/saksham/Desktop/Programming/CSE101 - IP/MTH100 A1/matrix.txt", "r+")
+mtx = [list(map(float,i.split())) for i in file]
+
+for k in range(len(mtx)-1):
+  for i in range(k+1,len(mtx)):
+    mult = mtx[i][k]/mtx[k][k]
+    for j in range(k+1,len(mtx)):
+      mtx[i][j] = mtx[i][j] - mult*mtx[k][j]
+    
+print(mtx)
