@@ -307,13 +307,45 @@ code for any number system conversion from decimal
 #   f.write(str(i)+'\n')
   
 
-file = open("/Users/saksham/Desktop/Programming/CSE101 - IP/MTH100 A1/matrix.txt", "r+")
-mtx = [list(map(float,i.split())) for i in file]
+# file = open("/Users/saksham/Desktop/Programming/CSE101 - IP/MTH100 A1/matrix.txt", "r+")
+# mtx = [list(map(float,i.split())) for i in file]
 
-for k in range(len(mtx)-1):
-  for i in range(k+1,len(mtx)):
-    mult = mtx[i][k]/mtx[k][k]
-    for j in range(k+1,len(mtx)):
-      mtx[i][j] = mtx[i][j] - mult*mtx[k][j]
+# for k in range(len(mtx)-1):
+#   for i in range(k+1,len(mtx)):
+#     mult = mtx[i][k]/mtx[k][k]
+#     for j in range(k+1,len(mtx)):
+#       mtx[i][j] = mtx[i][j] - mult*mtx[k][j]
     
-print(mtx)
+# print(mtx)
+
+
+# def fib(n):
+#   if n==0:
+#     return 0
+#   elif n==1 or n==2:
+#     return 1
+
+#   return fib(n-1) + fib(n-2)
+
+# print(fib(6))
+
+# sum=0
+# init = [0,1]
+# for i in range(10):
+#   init.append(init[len(init)-1]+init[len(init)-2])
+# for j in init:
+#   print(j)
+
+
+def sum(n, i=0):
+  n = str(n)
+  if i==len(n)-1:
+    return int(n[i])
+  return int(n[i])+sum(n,i+1)
+print(sum(458))
+
+def pow(x,y):
+  i = 1
+  if y == 0:
+    return 1
+  
