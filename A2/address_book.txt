@@ -2,3 +2,4 @@ name: Saksham Singh		address: o		email: a@a.a		phone_no: 4
 name: Adya A		address: p		email: i		phone_no: 5
 name: Pankhuri S		address: q		email: j		phone_no: 6
 name: eruk		address: wer		email: qwerty@gmail.com		phone_no: 78
+name: Somay		address: rgt		email: bxy@g.c		phone_no: 78787
