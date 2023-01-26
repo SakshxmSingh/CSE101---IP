@@ -7,13 +7,31 @@ file = open("/Users/saksham/Desktop/Programming/CSE101 - IP/MTH100 A1/matrix.txt
 mtx = [list(map(float,i.split())) for i in file]
 print(mtx)
 
-def ef(matrix):
+rows = len(mtx)
+cols = len(mtx[0])
+
+def pivot_divide(lst):
+    i = 0
+    if lst[0]==0:
+        if set(lst)=={0}:
+            pass
+        else:
+            while lst[i]==0:
+                if lst[i+1]==0:
+                    pass
+                else:
+                    lst=list(map(lambda a: a/lst[i+1],lst))
+                i+=1                
+    else:
+        lst=list(map(lambda a: a/lst[0],lst))
+    return lst
+
+def forward_el(matrix):
+    global rows, cols
     def swap(r1,r2):
         r1, r2 = r2, r1
         return r1, r2
     
-    rows = len(matrix)
-    cols = len(matrix[0])
     for i in range(rows-1):
         if matrix[i][i]==0:
             for j in range(i+1,rows):
@@ -33,8 +51,18 @@ def ef(matrix):
         for y in range(cols):
             matrix[x][y]=round(matrix[x][y],3)
 
+    for i in range(rows):
+        matrix[i] = pivot_divide(matrix[i])
+    
+    for x in range(rows):
+        for y in range(cols):
+            matrix[x][y]=round(matrix[x][y],3)
+
     return matrix
 
-print(ef(mtx))
+ef_mtx = forward_el(mtx)
+
+print(ef_mtx)
+
 
 
