@@ -61,8 +61,4 @@ def forward_el(matrix):
     return matrix
 
 ef_mtx = forward_el(mtx)
-
 print(ef_mtx)
-
-
-
