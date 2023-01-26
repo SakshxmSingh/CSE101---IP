@@ -107,6 +107,12 @@ def back_sub(matrix):
 
     return matrix
 
+def parm(matrix):
+    global rows, cols
+    for i in rows:
+        for j in cols:
+            while
+
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
 
