@@ -109,9 +109,34 @@ def back_sub(matrix):
 
 def parm(matrix):
     global rows, cols
-    for i in rows:
-        for j in cols:
-            while
+    pivot_list = []
+    for i in range(rows):
+        for j in range(cols):
+            if matrix[i][j]!=0:
+                pivot_list.append(j)
+                break
+    # print(pivot_list)
+    col_list = [i for i in range(cols)]
+    non_pivots = [i for i in col_list if i not in pivot_list]
+    # print(non_pivots)
+
+    vectors = []
+    for i in col_list:
+        col_i = []
+        for j in range(rows):
+            col_i.append(matrix[j][i])
+        vectors.append(col_i)
+    # print(vectors)
+
+    for i in non_pivots:
+        # print(vectors[i])
+        print('x{} is free'.format(i+1))
+    
+    print("The parametric soln is: ")
+    print("X = ", end='')
+    for i in non_pivots:
+        print('x{}*{}'.format(i+1,vectors[i]))
+
 
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
@@ -122,4 +147,6 @@ for i in rref_mtx:
     for j in i:
         print(j,end="\t")
     print("|")
+
+parm(rref_mtx)
 

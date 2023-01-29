@@ -19,7 +19,7 @@ for i in file:
     # basic_dict.update({lst[0]:(float(lst[1]),set1)})
     lstlst.append(lst2)
 
-# print(lstlst)
+print(lstlst)
 
 for i in range(len(lstlst)):
     sum = lstlst[i][1]
