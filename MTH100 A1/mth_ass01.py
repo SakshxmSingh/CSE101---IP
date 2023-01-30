@@ -169,9 +169,12 @@ def parm(matrix):
     #     for i in dic[key]:
     #         print(" {}*x{} +".format(i[0],i[1]+1), end="")
 
-    for i in range(rows):
-        for j in range(cols):
-            if 
+    # for i in range(rows):
+    #     j=0
+    #     while matrix[i][j]!=1:
+    #         j+=1
+        
+
 
     trans_mtx = list(zip(*matrix))
 
@@ -190,10 +193,12 @@ def parm(matrix):
                     if trans_mtx[j][k] != float(0):
                         temp[pivot_list[k]] = -trans_mtx[j][k]
         vectors.append(temp)
-
-    print("The parametric form is:\nX = ",end="")
-    for i in range(len(vectors)):
-        print(f"x{non_pivots[i]+1}{vectors[i]}", end = " + ") if i != (len(vectors)-1) else print(f"x{non_pivots[i]+1}{vectors[i]}")
+    if len(vectors)==0:
+        print("Only trivial solution exists")   
+    else:
+        print("The parametric form is:\nX = ",end="")
+        for i in range(len(vectors)):
+            print(f"x{non_pivots[i]+1}{vectors[i]}", end = " + ") if i != (len(vectors)-1) else print(f"x{non_pivots[i]+1}{vectors[i]}")
     print("----------------------------------------------")
     
 ef_mtx = forward_el(mtx)
