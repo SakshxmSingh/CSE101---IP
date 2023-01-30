@@ -128,7 +128,7 @@ def back_sub(matrix):
     return matrix
 
 def parm(matrix):
-    global rows, cols
+    global rows, cols, pivot_list, col_list, non_pivots
     pivot_list = []
     for i in range(rows):
         for j in range(cols):
@@ -140,6 +140,7 @@ def parm(matrix):
     non_pivots = [i for i in col_list if i not in pivot_list]
     # print(non_pivots)
 
+    
     # vectors = []
     # for i in col_list:
     #     col_i = []
@@ -152,13 +153,42 @@ def parm(matrix):
         # print(vectors[i])
         print('x{} is free'.format(i+1))
     print("----------------------------------------------")
-    
-    
-    
-    # print("The parametric soln is: ")
-    # print("X = ", end='')
-    # for i in non_pivots:
-    #     print('x{}*{}'.format(i+1,vectors[i]))
+
+    # for i in range(rows):
+    #     lst = []
+    #     for j in range(cols):
+    #         if matrix[i][j]==1:
+    #             lst.append[j]
+    #             break
+    #     for j in range(lst[0]+1,cols):
+    #         if matrix[i][j]!=0:
+    #             lst.append((-1*matrix[i][j],j))
+
+    # for key in dic:
+    #     print("x{} =".format(key+1), end="")
+    #     for i in dic[key]:
+    #         print(" {}*x{} +".format(i[0],i[1]+1), end="")
+
+    trans_mtx = list(zip(*matrix))
+
+    vectors = []
+    for i in non_pivots:
+        if len(trans_mtx[i]) == len(matrix[0]):
+            temp = trans_mtx
+        else:
+            temp = [float(0)]*len(matrix[0])
+        for j in range(len(temp)):
+            if j == i: temp[j] = 1
+
+        for j in range(len(trans_mtx)):
+            if j == i:
+                for k in range(len(trans_mtx[j])):
+                    if trans_mtx[j][k] != float(0):
+                        temp[pivot_list[k]] = -trans_mtx[j][k]
+        vectors.append(temp)
+    # x = parm(rref_mtx)
+    for i in range(len(vectors)):
+        print(f"x{non_pivots[i]+1}{vectors[i]}", end = " + ") if i != (len(vectors)-1) else print(f"x{non_pivots[i]+1}{vectors[i]}")
 
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
