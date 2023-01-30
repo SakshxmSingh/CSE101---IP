@@ -33,21 +33,41 @@ def pivot_divide(lst):
 
 def forward_el(matrix):
     global rows, cols
-    for i in range(rows-1):
-        if matrix[i][i]==0:
-            for j in range(i+1,rows):
-                if matrix[j][i]==0:
-                    if j<rows-1:
-                        pass
-                    elif j==rows-1:
-                        print("Matrix is singular, the only solution is a trivial solution")
-                        return None
-                else:
-                    matrix[i],matrix[j] = swap(matrix[i],matrix[j])
+    # for i in range(rows-1):
+    #     if matrix[i][i]==0:
+    #         for j in range(i+1,rows):
+    #             if matrix[j][i]==0:
+    #                 if j<rows-1:
+    #                     pass
+    #                 elif j==rows-1:
+    #                     print("Matrix is singular, the only solution is a trivial solution")
+    #                     return None
+    #             else:
+    #                 matrix[i],matrix[j] = swap(matrix[i],matrix[j])
 
-        for k in range(i+1,rows):
-            r = matrix[k][i]/matrix[i][i]
-            matrix[k] = [matrix[k][x]-r*matrix[i][x] for x in range(cols)]
+    #     for k in range(i+1,rows):
+    #         r = matrix[k][i]/matrix[i][i]
+    #         matrix[k] = [matrix[k][x]-r*matrix[i][x] for x in range(cols)]
+
+    i = 0
+    for j in range(cols):
+        if i >= rows:
+            break
+        
+        for k in range(i, rows):
+            if matrix[k][j] != 0:
+                matrix[i], matrix[k] = matrix[k], matrix[i]
+                break
+        
+        if matrix[i][j] == 0:
+            continue
+        
+        pivot = matrix[i][j]
+        for k in range(i+1, rows):
+            scale = matrix[k][j] / pivot
+            for l in range(j, cols):
+                matrix[k][l] -= scale * matrix[i][l]
+        i += 1
 
     for x in range(rows):
         for y in range(cols):
