@@ -337,15 +337,16 @@ code for any number system conversion from decimal
 #   print(j)
 
 
-def sum(n, i=0):
-  n = str(n)
-  if i==len(n)-1:
-    return int(n[i])
-  return int(n[i])+sum(n,i+1)
-print(sum(458))
+# def sum(n, i=0):
+#   n = str(n)
+#   if i==len(n)-1:
+#     return int(n[i])
+#   return int(n[i])+sum(n,i+1)
+# print(sum(458))
 
-def pow(x,y):
-  i = 1
-  if y == 0:
-    return 1
+# def pow(x,y):
+#   i = 1
+#   if y == 0:
+#     return 1
   
+
