@@ -169,6 +169,10 @@ def parm(matrix):
     #     for i in dic[key]:
     #         print(" {}*x{} +".format(i[0],i[1]+1), end="")
 
+    for i in range(rows):
+        for j in range(cols):
+            if 
+
     trans_mtx = list(zip(*matrix))
 
     vectors = []
@@ -186,10 +190,12 @@ def parm(matrix):
                     if trans_mtx[j][k] != float(0):
                         temp[pivot_list[k]] = -trans_mtx[j][k]
         vectors.append(temp)
-    # x = parm(rref_mtx)
+
+    print("The parametric form is:\nX = ",end="")
     for i in range(len(vectors)):
         print(f"x{non_pivots[i]+1}{vectors[i]}", end = " + ") if i != (len(vectors)-1) else print(f"x{non_pivots[i]+1}{vectors[i]}")
-
+    print("----------------------------------------------")
+    
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
 
