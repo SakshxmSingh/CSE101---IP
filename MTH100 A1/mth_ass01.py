@@ -56,7 +56,7 @@ def forward_el(matrix):
         
         for k in range(i, rows):
             if matrix[k][j] != 0:
-                matrix[i], matrix[k] = matrix[k], matrix[i]
+                matrix[i], matrix[k] = swap(matrix[i], matrix[k])
                 break
         
         if matrix[i][j] == 0:
@@ -71,14 +71,14 @@ def forward_el(matrix):
 
     for x in range(rows):
         for y in range(cols):
-            matrix[x][y]=round(matrix[x][y],2)
+            matrix[x][y]=round(matrix[x][y],3)
 
     for i in range(rows):
         matrix[i] = pivot_divide(matrix[i])
     
     for x in range(rows):
         for y in range(cols):
-            matrix[x][y]=round(matrix[x][y],2)
+            matrix[x][y]=round(matrix[x][y],3)
 
     return matrix
 
@@ -119,7 +119,7 @@ def back_sub(matrix):
 
     for x in range(rows):
         for y in range(cols):
-            matrix[x][y]=round(matrix[x][y],2)
+            matrix[x][y]=round(matrix[x][y],3)
             if matrix[x][y] == -0:
                 matrix[x][y] = int(matrix[x][y])
             elif math.modf(matrix[x][y])[0] == 0:
@@ -157,16 +157,16 @@ def parm(matrix):
     for i in non_pivots:
         print('x{}*{}'.format(i+1,vectors[i]))
 
-
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
 
-print("------------------------------------\nThe RREF matrix is:")
+print("------------------------------------\nThe RREF matrix is:\n")
 for i in rref_mtx:
     print("|",end=" ")
     for j in i:
         print(j,end="\t")
     print("|")
+print("\n------------------------------------")
 
 parm(rref_mtx)
 
