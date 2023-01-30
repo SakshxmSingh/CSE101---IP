@@ -140,33 +140,36 @@ def parm(matrix):
     non_pivots = [i for i in col_list if i not in pivot_list]
     # print(non_pivots)
 
-    vectors = []
-    for i in col_list:
-        col_i = []
-        for j in range(rows):
-            col_i.append(matrix[j][i])
-        vectors.append(col_i)
-    # print(vectors)
+    # vectors = []
+    # for i in col_list:
+    #     col_i = []
+    #     for j in range(rows):
+    #         col_i.append(matrix[j][i])
+    #     vectors.append(col_i)
+    # # print(vectors)
 
     for i in non_pivots:
         # print(vectors[i])
         print('x{} is free'.format(i+1))
+    print("----------------------------------------------")
     
-    print("The parametric soln is: ")
-    print("X = ", end='')
-    for i in non_pivots:
-        print('x{}*{}'.format(i+1,vectors[i]))
+    
+    
+    # print("The parametric soln is: ")
+    # print("X = ", end='')
+    # for i in non_pivots:
+    #     print('x{}*{}'.format(i+1,vectors[i]))
 
 ef_mtx = forward_el(mtx)
 rref_mtx = back_sub(ef_mtx)
 
-print("------------------------------------\nThe RREF matrix is:\n")
+print("----------------------------------------------\nThe RREF matrix is:\n----------------------------------------------")
 for i in rref_mtx:
     print("|",end=" ")
     for j in i:
         print(j,end="\t")
     print("|")
-print("\n------------------------------------")
+print("----------------------------------------------")
 
 parm(rref_mtx)
 
