@@ -169,26 +169,31 @@ def parm(matrix):
     #     for i in dic[key]:
     #         print(" {}*x{} +".format(i[0],i[1]+1), end="")
 
+    # dic = {}
     # for i in range(rows):
     #     j=0
     #     while matrix[i][j]!=1:
+    #         if j == len()
     #         j+=1
-        
+    #     lst = []
+    #     for k in range(j+1,cols):
+    #         if matrix[i][k]!=0:
+    #             lst.append(k)
+    #     dic.update({j:lst})
 
+    # print(dic)
 
     trans_mtx = list(zip(*matrix))
-
+    print(trans_mtx)
     vectors = []
     for i in non_pivots:
-        if len(trans_mtx[i]) == len(matrix[0]):
-            temp = trans_mtx
-        else:
-            temp = [float(0)]*len(matrix[0])
+        temp = [float(0)]*len(matrix[0])
         for j in range(len(temp)):
             if j == i: temp[j] = 1
 
         for j in range(len(trans_mtx)):
             if j == i:
+                print(trans_mtx[j])
                 for k in range(len(trans_mtx[j])):
                     if trans_mtx[j][k] != float(0):
                         temp[pivot_list[k]] = -trans_mtx[j][k]
