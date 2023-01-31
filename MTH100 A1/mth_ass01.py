@@ -184,16 +184,13 @@ def parm(matrix):
     # print(dic)
 
     trans_mtx = list(zip(*matrix))
-    print(trans_mtx)
+    # print(trans_mtx)
     vectors = []
     for i in non_pivots:
-        temp = [float(0)]*len(matrix[0])
+        temp = [0]*len(matrix[0])
         for j in range(len(temp)):
-            if j == i: temp[j] = 1
-
-        for j in range(len(trans_mtx)):
             if j == i:
-                print(trans_mtx[j])
+                temp[j] = 1
                 for k in range(len(trans_mtx[j])):
                     if trans_mtx[j][k] != float(0):
                         temp[pivot_list[k]] = -trans_mtx[j][k]
