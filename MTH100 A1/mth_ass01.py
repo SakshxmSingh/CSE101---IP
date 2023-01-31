@@ -33,21 +33,6 @@ def pivot_divide(lst):
 
 def forward_el(matrix):
     global rows, cols
-    # for i in range(rows-1):
-    #     if matrix[i][i]==0:
-    #         for j in range(i+1,rows):
-    #             if matrix[j][i]==0:
-    #                 if j<rows-1:
-    #                     pass
-    #                 elif j==rows-1:
-    #                     print("Matrix is singular, the only solution is a trivial solution")
-    #                     return None
-    #             else:
-    #                 matrix[i],matrix[j] = swap(matrix[i],matrix[j])
-
-    #     for k in range(i+1,rows):
-    #         r = matrix[k][i]/matrix[i][i]
-    #         matrix[k] = [matrix[k][x]-r*matrix[i][x] for x in range(cols)]
 
     i = 0
     for j in range(cols):
@@ -140,48 +125,10 @@ def parm(matrix):
     non_pivots = [i for i in col_list if i not in pivot_list]
     # print(non_pivots)
 
-    
-    # vectors = []
-    # for i in col_list:
-    #     col_i = []
-    #     for j in range(rows):
-    #         col_i.append(matrix[j][i])
-    #     vectors.append(col_i)
-    # # print(vectors)
-
     for i in non_pivots:
         # print(vectors[i])
         print('x{} is free'.format(i+1))
     print("----------------------------------------------")
-
-    # for i in range(rows):
-    #     lst = []
-    #     for j in range(cols):
-    #         if matrix[i][j]==1:
-    #             lst.append[j]
-    #             break
-    #     for j in range(lst[0]+1,cols):
-    #         if matrix[i][j]!=0:
-    #             lst.append((-1*matrix[i][j],j))
-
-    # for key in dic:
-    #     print("x{} =".format(key+1), end="")
-    #     for i in dic[key]:
-    #         print(" {}*x{} +".format(i[0],i[1]+1), end="")
-
-    # dic = {}
-    # for i in range(rows):
-    #     j=0
-    #     while matrix[i][j]!=1:
-    #         if j == len()
-    #         j+=1
-    #     lst = []
-    #     for k in range(j+1,cols):
-    #         if matrix[i][k]!=0:
-    #             lst.append(k)
-    #     dic.update({j:lst})
-
-    # print(dic)
 
     trans_mtx = list(zip(*matrix))
     # print(trans_mtx)
