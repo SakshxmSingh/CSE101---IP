@@ -511,11 +511,77 @@ code for any number system conversion from decimal
 # parm(rref_mtx)
 
 
-import matplotlib.pyplot as plt
-# Create some data
-X = [1, 2, 3, 4, 5]
-Y = [2, 4, 6, 8, 10]
-# Create a basic line plot
-plt.plot (X, Y)
-# Show the plot
-plt.show ()
+# import matplotlib.pyplot as plt
+# # Create some data
+# X = [1, 2, 3, 4, 5]
+# Y = [2, 4, 6, 8, 10]
+# # Create a basic line plot
+# plt.plot (X, Y)
+# # Show the plot
+# plt.show ()
+
+
+
+# import numpy
+
+# n = int(input())
+# p = int(input())
+# k = int(input())
+# m = int(input())
+
+# mat1 = []
+# for i in range(n):
+#     temp = [int(i) for i in list(input().split())]
+#     mat1.append(temp)
+    
+# mat2 = []
+# for i in range(k):
+#     temp = [int(i) for i in list(input().split())]
+#     mat2.append(temp)
+    
+# np_mat1 = numpy.array(mat1)
+# np_mat2 = numpy.array(mat2)
+
+# try:
+#     mult = numpy.dot(np_mat1, np_mat2)
+#     for i in range(len(mult)):
+#         for j in range(len(mult[0])):
+#             print(float(mult[i][j]), end=' ')
+#         print()
+# except:
+#     print("Dimensions of matrices are not compatible")
+
+
+
+
+# import matplotlib.pyplot as mpt
+
+# y_coords = list(map(int,input().split()))
+# x_coords = [i+1 for i in range(len(y_coords))]
+# y_mean = float(sum(y_coords)/len(y_coords))
+
+# mpt.plot(x_coords,y_coords, color="blue")
+# mpt.axhline(y_mean, linestyle='--', color="red")
+# mpt.show()
+
+
+# import math
+
+# coeff = list(map(int,input().split()))
+
+# def quadratic_check(coef):
+#     assert len(coef) == 3, "Type-1"
+#     assert (coef[1])**2 - 4*coef[0]*coef[2] >= 0, "Type-2"
+    
+#     r1, r2 = (-coef[1] + math.sqrt((coef[1])**2 - 4*coef[0]*coef[2]))/2*coef[2] , (-coef[1] - math.sqrt((coef[1])**2 - 4*coef[0]*coef[2]))/2*coef[2]
+        
+#     print(r1, r2)
+#     assert max(r1,r2)%min(r1,r2)==0, "Type-3"
+    
+#     print(True)
+    
+# try:
+#     quadratic_check(coeff)
+# except AssertionError:
+#     print(False)
+
