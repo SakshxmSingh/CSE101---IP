@@ -16,3 +16,10 @@ try:
     quadratic_check(coeff)
 except AssertionError:
     print(False)
+
+# try:
+#     i = int(input("Enter a number greater than 6: "))
+#     assert i>6 , 'Number not greater than 6'
+#     print(i**2)
+# except AssertionError:
+#     print(i**3)
