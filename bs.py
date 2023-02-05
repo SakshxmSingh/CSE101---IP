@@ -586,5 +586,40 @@ code for any number system conversion from decimal
 #     print(False)
 
 
-657834
-print("lalalala")
+# def function(n):
+#     if n<=1:
+#         return 1
+#     else:
+#         return n*function(n-1)
+
+# print(function(5))
+
+
+# def fib(n):
+#     if n<=1:
+#         return n
+#     else:
+#         return fib(n-1) + fib(n-2)
+
+# print(fib(8))
+
+# def sumn(lust):
+#     if len(lust) == 1:
+#         return lust[0]
+#     else:
+#         sm = sumn(lust[1:])
+#         return lust[0] + sm
+
+# print(sum([1,2,3,4,5,6]))
+
+# def sumd(stree):
+#     if len(stree)==1:
+#         return int(stree[0])
+#     else:
+#         sm = stree[:-1]
+#         return str(int(stree)%10 + int(sumd(sm)))
+
+# print(sumd('2345'))
+
+a = [1,2,3,4,5]
+print(str(a))

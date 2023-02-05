@@ -14,16 +14,15 @@ def mountain(n,g=0):
         g+=1
         mountain(i,g)
 
-def valley(i=2):
-    global n
+def valley(n,i=2):
     if i==n+1:
         pass
     else:
         print("* "*(i)+"  "*(2*n-2*i)+"* "*(i))
         i+=1
-        valley(i)
+        valley(n,i)
 
 n = int(input("Enter n: "))
 
 mountain(n)
-valley()
+valley(n)

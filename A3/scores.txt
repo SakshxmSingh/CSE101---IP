@@ -1,0 +1,20 @@
+file1
+score: 9.183520599250937
+most used words: ['you', 'the', 'i', 'of', 'happiness']
+random words: once, first, your, first, a, 
+------------------------------
+file2
+score: 9.042857142857144
+most used words: ['the', 'to', 'you', 'and', 'it']
+random words: getting, woman, intentions, if, oppresses, 
+------------------------------
+file3
+score: 8.553627058299954
+most used words: ['the', 'is', 'and', 'love', 'so']
+random words: list!, too, ride, love.’, a, 
+------------------------------
+file4
+score: 9.505839416058395
+most used words: ['the', 'i', 'my', 'is', 'in']
+random words: shirt, key, mirror, rinse, paper, 
+------------------------------
