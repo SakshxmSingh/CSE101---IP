@@ -23,6 +23,8 @@ def valley(n,i=2):
         valley(n,i)
 
 n = int(input("Enter n: "))
-
-mountain(n)
-valley(n)
+if n>0:
+    mountain(n)
+    valley(n)
+else:
+    print("enter a valid number!")
