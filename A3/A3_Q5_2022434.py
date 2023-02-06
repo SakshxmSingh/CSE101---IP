@@ -66,7 +66,7 @@ def func_3(rno,data,grades):
             
 cname, credits = "IP", 4
 assessments = [("labs", 30), ("midsem", 15), ("assign.", 30), ("endsem", 25)] 
-policy = {80, 65, 50, 40}
+policy = [80, 65, 50, 40]
 f_input = open("/Users/saksham/Desktop/Programming/CSE101 - IP/A3/marks.txt","r+")
 
 global data, sum_data
