@@ -10,22 +10,19 @@ def F1():
     global specs, string
     lust = string.split()
     lust = [i.lower() for i in lust]
-    for i in range(len(lust)):
-        for j in specs:
-            if j in lust[i]:
-                lust[i] = lust[i].strip(j)
+    # for i in range(len(lust)):
+    #     for j in specs:
+    #         if j in lust[i]:
+    #             lust[i] = lust[i].strip(j)
+    lust = ["".join(chr for chr in i if chr.isalnum()) for i in lust]
     lust_set = set(lust)
-
     return len(lust_set)/len(lust), lust_set
 
 def F2():
     global specs, string
     lust = string.split()
     lust = [i.lower() for i in lust]
-    for i in range(len(lust)):
-        for j in specs:
-            if j in lust[i]:
-                lust[i] = lust[i].strip(j)
+    lust = ["".join(chr for chr in i if chr.isalnum()) for i in lust]
     lust_set = set(lust)
     dic = {}
     for key in lust_set:
@@ -65,18 +62,13 @@ def F3():
     for i in sent:
         if len(i.split())>35 or len(i.split())<5:
             count+=1
-    
     return count/len(sent)
 
 def F4():
     global specs, string
     lust = string.split()
     lust = [i.lower() for i in lust]
-    for i in range(len(lust)):
-        for j in specs:
-            if j in lust[i]:
-                lust[i] = lust[i].strip(j)
-    
+    lust = ["".join(chr for chr in i if chr.isalnum()) for i in lust]
     count = 0
     # for i in range(len(string)):
     #     if string[i] in specs:

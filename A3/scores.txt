@@ -1,20 +1,21 @@
+
 file1
 score: 9.183520599250937
-most used words: ['you', 'the', 'i', 'of', 'happiness']
-random words: once, first, your, first, a, 
+most used words: ['you', 'the', 'i', 'of', 'that']
+random words: first, life, prevents, it, i, 
 ------------------------------
 file2
 score: 9.042857142857144
-most used words: ['the', 'to', 'you', 'and', 'it']
-random words: getting, woman, intentions, if, oppresses, 
+most used words: ['the', 'it', 'you', 'and', 'of']
+random words: without, or, your, imagine, makes, 
 ------------------------------
 file3
-score: 8.553627058299954
-most used words: ['the', 'is', 'and', 'love', 'so']
-random words: list!, too, ride, love.’, a, 
+score: 8.357365376056965
+most used words: ['the', 'love', 'is', 'they', 'and']
+random words: popped, margareta, talking, tatyana, the, 
 ------------------------------
 file4
-score: 9.505839416058395
-most used words: ['the', 'i', 'my', 'is', 'in']
-random words: shirt, key, mirror, rinse, paper, 
+score: 9.374452554744526
+most used words: ['i', 'the', 'my', 'is', 'in']
+random words: dispenser, and, toiletpaper, we, unshaven, 
 ------------------------------

@@ -3,7 +3,10 @@
 # Section B,  Group 7
 # IP Assignment 03
 
-#--------------ques04------------------
+#--------------ques06------------------
+import timeit
+
+q4 = '''
 def cuttoff_decider(scale):
     diff_lust = []
     if len(scale)==1:
@@ -27,14 +30,14 @@ def cuttoff_decider(scale):
     return cuttoff
 
 def func_1(cname,credits,assessments,data):
-    print("Course name: "+cname+"\t\t"+"Credits: "+str(credits)+"\nAssessments:")
+    print(cname,credits)
     for i in assessments:
-        print(i[0],end='\t')
+        print(i[0])
     print()
     for i in assessments:
-        print(i[1],end="\t")
+        print(i[1])
     print()
-    print("Cutoffs:\nA:",cuttoff_decider(a_scale),"\tB:",cuttoff_decider(b_scale),"\tC:",cuttoff_decider(c_scale),"\tD:",cuttoff_decider(d_scale))
+    print(cuttoff_decider(a_scale),cuttoff_decider(b_scale),cuttoff_decider(c_scale),cuttoff_decider(d_scale))
     a,b,c,d,f=0,0,0,0,0
     for i in data:
         if i.grade=='A': a+=1
@@ -42,27 +45,27 @@ def func_1(cname,credits,assessments,data):
         elif i.grade=='C': c+=1
         elif i.grade=='D': d+=1
         elif i.grade=='F': f+=1
-    print("Grades summary: \nA:",a,"\tB:",b,"\tC:",c,"\tD:",d,"\tF:",f)
+    print(a,b,c,d,f)
 
 def func_2(data):
     f_output = open("/Users/saksham/Desktop/Programming/CSE101 - IP/A3/grades.txt","w+")
-    f_output.write("RollNo.\t\tTotal\tGrade\n")
+    f_output.write()
     for i in data:
-        f_output.write(str(i.rno)+"\t\t"+str(i.total)+"\t\t"+str(i.grade)+"\n")
+        f_output.write(str(i.rno),str(i.total),str(i.grade))
 
 def func_3(rno_input,data):
     for i in data:
         if rno_input not in [j.rno for j in data]:
             break
         elif rno_input==i.rno:
-            print("Roll No.: ",rno_input)
-            print("Assesment marks: ",i.marks)
+            print(rno_input)
+            print(i.marks)
     for i in data:
         if rno_input not in [j.rno for j in data]: 
-            print("Rollno doesn't exist") 
+            print() 
             break
         elif rno_input==i.rno:
-            print("Total marks: ",i.total,"\nFinal Grade: ",i.grade)
+            print(i.total,i.grade)
 
 def main_q4():        
 
@@ -101,7 +104,7 @@ def main_q4():
             self.grade = ''
 
         def __str__(self) -> str:
-            return str(self.rno)+'\t'+str(self.marks)+'\t'+str(self.total)+'\t'+str(self.grade)
+            return str(self.rno), str(self.marks), str(self.total), str(self.grade)
 
         def assign_grades(self, parm):
             self.grade = parm
@@ -119,17 +122,8 @@ def main_q4():
     return cname, credits, assessments, IP
 
 main_q4()
-if __name__ == "__main__":
-    while True:
-        x = (input("Enter function:\n1. Course summary\n2. Student Grades\n3. Search Student\n"))
-        try:
-            if int(x)==1:
-                func_1(main_q4()[0],main_q4()[1],main_q4()[2],main_q4()[3].data)
-            elif int(x)==2:
-                func_2(main_q4()[3].data)
-            elif int(x)==3:
-                func_3(int(input("Enter rno: ")),main_q4()[3].data)
-            else:
-                break
-        except ValueError:
-            break
+'''
+
+q4exectime = timeit.timeit(q4)
+
+print(q4exectime, "secs.")
