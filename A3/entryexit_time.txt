@@ -1,0 +1,363 @@
+--------------------------------
+ENTRY LIST:
+--------------------------------
+Khushdev Pandit,  1,  3414
+Smiti Singhal,  1,  3452
+Khushdev Pandit,  3,  3502
+Swati Jha,  5,  3516
+Mohammed Kaif,  5,  3521
+Rishabh Oberoi,  5,  3531
+Anuj Yadav,  1,  3615
+Khushdev Pandit,  1,  3639
+Bharat Goyal,  1,  3708
+Karan Baboota,  3,  3719
+Swaib Ilias Mazumder,  5,  3725
+Rishika Jain,  3,  3756
+Dhruv Mishra,  5,  3804
+Khushdev Pandit,  1,  3849
+Snehal,  5,  3914
+Khushdev Pandit,  5,  3954
+Thanmayee Matha,  5,  4007
+Swatantra kumar nigam,  5,  4010
+Shambhavi Sharma,  1,  4033
+Ankita Mahato,  5,  4041
+Swaib Ilias Mazumder,  3,  4049
+Sahil Goyal,  1,  4124
+Shraman Jain,  3,  4138
+Aditya Raj Singh,  5,  4140
+Khushdev Pandit,  5,  4146
+Yuvraj Singh,  3,  4146
+Khushdev Pandit,  3,  4209
+Vamshi Krishna Vannekala,  1,  4217
+Vibhor Agarwal,  5,  4221
+Param Shah,  5,  4228
+Khushdev Pandit,  1,  4328
+Khushdev Pandit,  1,  4348
+Mohammed Kaif,  1,  4409
+Surbhi Goyal,  1,  4417
+Khushdev Pandit,  1,  4429
+Manas,  1,  4446
+Sushil Kumar,  3,  4503
+Rishika Jain,  1,  4506
+Yuvraj Singh,  3,  4507
+Khushdev Pandit,  3,  4522
+Rishabh Oberoi,  5,  4526
+Khushdev Pandit,  1,  4556
+Yuvraj Singh,  5,  4558
+Ankita Mahato,  3,  4631
+Khushdev Pandit,  3,  4637
+Khushdev Pandit,  1,  4736
+Aditya Raj Singh,  3,  4744
+Swati Jha,  1,  4808
+Anuj Yadav,  5,  4856
+Khushdev Pandit,  5,  4907
+Manas,  3,  4924
+Param Shah,  5,  4932
+Thakkar Divyakumar Rameshbhai,  1,  4937
+Khushdev Pandit,  5,  4950
+Khushdev Pandit,  5,  5041
+Khushdev Pandit,  5,  5110
+Thanmayee Matha,  3,  5136
+Snehal,  5,  5139
+Shambhavi Sharma,  5,  5202
+Khushdev Pandit,  5,  5232
+Bhavya Jain,  3,  5237
+Swaib Ilias Mazumder,  3,  5252
+Anuj Yadav,  3,  5253
+Khushdev Pandit,  1,  5320
+Bharat Goyal,  1,  5343
+Shashank Dargar,  5,  5359
+Khushdev Pandit,  5,  5501
+Ankita Mahato,  3,  5544
+Khushdev Pandit,  3,  5608
+Swati Jha,  1,  5633
+Swaib Ilias Mazumder,  1,  5645
+Khushdev Pandit,  3,  5648
+Thakkar Divyakumar Rameshbhai,  3,  5728
+Rohan Dhar,  1,  5742
+Shraman Jain,  1,  5811
+Dhruv Mishra,  1,  5825
+Khushdev Pandit,  3,  5844
+Param Shah,  5,  5858
+Aryan Chaudhary,  5,  5901
+Gayam Shivakanth Reddy,  1,  5909
+Yuvraj Singh,  5,  5919
+Anuj Yadav,  5,  5928
+Swatantra kumar nigam,  5,  5935
+Swaib Ilias Mazumder,  5,  5949
+Snehal,  5,  10006
+Khushdev Pandit,  3,  10013
+Manas,  5,  10046
+Vamshi Krishna Vannekala,  5,  10102
+Khushdev Pandit,  5,  10135
+Smiti Singhal,  5,  10202
+Sumit Kumar,  5,  10203
+Khushdev Pandit,  5,  10214
+Param Shah,  3,  10217
+Vibhor Agarwal,  1,  10229
+Khushdev Pandit,  3,  10241
+Ujjwal Garg,  1,  10248
+Sushil Kumar,  3,  10300
+Ayush Srivastava,  3,  10313
+Khushdev Pandit,  3,  10329
+Sumit Kumar,  1,  10432
+Khushdev Pandit,  1,  10447
+Khushdev Pandit,  3,  10501
+Khushdev Pandit,  1,  10531
+Khushdev Pandit,  5,  10546
+Ankita Mahato,  5,  10550
+Kartik Gupta,  5,  10554
+Thanmayee Matha,  3,  10615
+Swaib Ilias Mazumder,  1,  10617
+Khushdev Pandit,  3,  10623
+Rishabh Oberoi,  3,  10628
+Khushdev Pandit,  1,  10643
+Dhruv Mishra,  3,  10651
+Snehal,  5,  10659
+Shashank Dargar,  3,  10708
+Bhavya Jain,  3,  10715
+Vamshi Krishna Vannekala,  5,  10731
+Ankita Mahato,  3,  10751
+Khushdev Pandit,  1,  10752
+Khushdev Pandit,  5,  10819
+Khushdev Pandit,  5,  10839
+Aryan Chaudhary,  1,  10858
+Ujjwal Garg,  5,  10914
+Swatantra kumar nigam,  1,  10920
+Khushdev Pandit,  5,  10953
+Surbhi Goyal,  1,  10959
+Khushdev Pandit,  1,  11032
+Dhruv Mishra,  1,  11039
+Manas,  1,  11049
+Vibhor Agarwal,  1,  11051
+Snehal,  5,  11101
+Khushdev Pandit,  1,  11120
+Anuj Yadav,  5,  11126
+Khushdev Pandit,  3,  11127
+Khushdev Pandit,  5,  11220
+Mohammed Kaif,  1,  11257
+Aryan Chaudhary,  3,  11310
+Khushdev Pandit,  1,  11313
+Rohan Dhar,  3,  11323
+Gayam Shivakanth Reddy,  5,  11411
+Khushdev Pandit,  3,  11417
+Thanmayee Matha,  5,  11434
+Karan Baboota,  1,  11525
+Khushdev Pandit,  3,  11527
+Aditya Raj Singh,  1,  11528
+Khushdev Pandit,  1,  11533
+Surbhi Goyal,  3,  11536
+Khushdev Pandit,  3,  11615
+Mohammed Kaif,  5,  11617
+Bharat Goyal,  3,  11655
+Anuj Yadav,  5,  11659
+Smiti Singhal,  5,  11724
+Sahil Goyal,  3,  11746
+Khushdev Pandit,  3,  11809
+Swati Jha,  3,  11814
+Khushdev Pandit,  3,  11903
+Sushil Kumar,  5,  11910
+Aditya Raj Singh,  1,  11915
+Khushdev Pandit,  5,  11919
+Karan Baboota,  5,  11923
+Swatantra kumar nigam,  1,  11944
+Khushdev Pandit,  3,  11957
+Kartik Gupta,  1,  12020
+Bhavya Jain,  5,  12024
+Yuvraj Singh,  5,  12029
+Ankita Mahato,  5,  12034
+Khushdev Pandit,  3,  12039
+Dhruv Mishra,  1,  12048
+Anuj Yadav,  5,  12053
+Khushdev Pandit,  5,  12102
+Swati Jha,  5,  12214
+Rishika Jain,  3,  12222
+Snehal,  1,  12225
+Vibhor Agarwal,  1,  12232
+Ujjwal Garg,  3,  12255
+Anuj Yadav,  3,  12306
+Khushdev Pandit,  5,  12322
+
+--------------------------------
+--------------------------------
+EXIT LIST:
+--------------------------------
+Khushdev Pandit,  5,  3342
+Sahil Goyal,  1,  3345
+Thanmayee Matha,  1,  3352
+Param Shah,  1,  3402
+Vibhor Agarwal,  5,  3412
+Khushdev Pandit,  1,  3448
+Swaib Ilias Mazumder,  1,  3533
+Khushdev Pandit,  5,  3538
+Mohammed Kaif,  5,  3540
+Sumit Kumar,  3,  3632
+Swati Jha,  1,  3655
+Thakkar Divyakumar Rameshbhai,  1,  3656
+Khushdev Pandit,  3,  3805
+Shambhavi Sharma,  5,  3815
+Manas,  3,  3909
+Khushdev Pandit,  3,  3926
+Rishika Jain,  1,  3953
+Swaib Ilias Mazumder,  3,  3957
+Khushdev Pandit,  5,  4008
+Rishabh Oberoi,  5,  4026
+Shraman Jain,  5,  4039
+Anuj Yadav,  5,  4143
+Khushdev Pandit,  3,  4147
+Yuvraj Singh,  3,  4209
+Khushdev Pandit,  5,  4220
+Sushil Kumar,  3,  4239
+Karan Baboota,  5,  4258
+Shraman Jain,  3,  4319
+Aditya Raj Singh,  1,  4329
+Thanmayee Matha,  3,  4341
+Khushdev Pandit,  3,  4347
+Khushdev Pandit,  5,  4351
+Gayam Shivakanth Reddy,  5,  4406
+Vibhor Agarwal,  5,  4435
+Khushdev Pandit,  1,  4442
+Param Shah,  3,  4456
+Surbhi Goyal,  5,  4501
+Dhruv Mishra,  5,  4502
+Yuvraj Singh,  1,  4514
+Kartik Gupta,  5,  4527
+Khushdev Pandit,  5,  4548
+Ankita Mahato,  3,  4615
+Khushdev Pandit,  3,  4633
+Khushdev Pandit,  1,  4711
+Shashank Dargar,  3,  4724
+Manas,  5,  4750
+Snehal,  3,  4817
+Khushdev Pandit,  5,  4820
+Khushdev Pandit,  1,  4911
+Bhavya Jain,  5,  4927
+Khushdev Pandit,  1,  4952
+Mohammed Kaif,  5,  5007
+Swaib Ilias Mazumder,  5,  5010
+Smiti Singhal,  1,  5018
+Shambhavi Sharma,  5,  5023
+Khushdev Pandit,  1,  5044
+Bharat Goyal,  5,  5127
+Khushdev Pandit,  5,  5128
+Sahil Goyal,  3,  5136
+Anuj Yadav,  3,  5151
+Khushdev Pandit,  5,  5233
+Ayush Srivastava,  1,  5236
+Khushdev Pandit,  1,  5324
+Anuj Yadav,  1,  5402
+Swaib Ilias Mazumder,  1,  5406
+Swati Jha,  3,  5422
+Thanmayee Matha,  3,  5457
+Khushdev Pandit,  3,  5509
+Swatantra kumar nigam,  3,  5510
+Ankita Mahato,  1,  5534
+Vamshi Krishna Vannekala,  1,  5535
+Sushil Kumar,  3,  5555
+Khushdev Pandit,  3,  5627
+Shashank Dargar,  5,  5636
+Thakkar Divyakumar Rameshbhai,  3,  5638
+Yuvraj Singh,  1,  5655
+Param Shah,  1,  5656
+Khushdev Pandit,  1,  5717
+Manas,  3,  5818
+Rishabh Oberoi,  1,  5836
+Swaib Ilias Mazumder,  3,  5852
+Khushdev Pandit,  5,  5904
+Param Shah,  3,  5929
+Snehal,  3,  10001
+Swaib Ilias Mazumder,  3,  10020
+Ankita Mahato,  1,  10041
+Khushdev Pandit,  1,  10128
+Swatantra kumar nigam,  5,  10130
+Thakkar Divyakumar Rameshbhai,  1,  10154
+Khushdev Pandit,  5,  10206
+Khushdev Pandit,  5,  10225
+Anuj Yadav,  3,  10230
+Sumit Kumar,  3,  10243
+Manas,  3,  10253
+Vamshi Krishna Vannekala,  3,  10315
+Khushdev Pandit,  5,  10325
+Aditya Raj Singh,  3,  10425
+Rohan Dhar,  3,  10427
+Khushdev Pandit,  3,  10434
+Khushdev Pandit,  5,  10449
+Snehal,  1,  10504
+Gayam Shivakanth Reddy,  3,  10505
+Khushdev Pandit,  1,  10522
+Khushdev Pandit,  5,  10543
+Vibhor Agarwal,  5,  10551
+Khushdev Pandit,  1,  10559
+Ankita Mahato,  3,  10612
+Param Shah,  1,  10615
+Aryan Chaudhary,  1,  10617
+Dhruv Mishra,  3,  10619
+Bharat Goyal,  1,  10622
+Khushdev Pandit,  5,  10628
+Bhavya Jain,  3,  10701
+Khushdev Pandit,  5,  10722
+Yuvraj Singh,  1,  10728
+Ujjwal Garg,  3,  10747
+Snehal,  5,  10753
+Swati Jha,  1,  10811
+Khushdev Pandit,  5,  10813
+Khushdev Pandit,  3,  10820
+Thanmayee Matha,  5,  10836
+Rishabh Oberoi,  3,  10858
+Dhruv Mishra,  1,  10930
+Khushdev Pandit,  1,  10933
+Khushdev Pandit,  3,  11011
+Sumit Kumar,  5,  11018
+Khushdev Pandit,  3,  11054
+Shraman Jain,  3,  11054
+Ankita Mahato,  5,  11056
+Khushdev Pandit,  3,  11121
+Surbhi Goyal,  1,  11123
+Aryan Chaudhary,  1,  11134
+Khushdev Pandit,  1,  11138
+Sushil Kumar,  3,  11153
+Shashank Dargar,  1,  11156
+Ayush Srivastava,  1,  11212
+Vibhor Agarwal,  1,  11217
+Khushdev Pandit,  3,  11223
+Snehal,  3,  11241
+Aryan Chaudhary,  3,  11332
+Khushdev Pandit,  5,  11412
+Khushdev Pandit,  1,  11457
+Mohammed Kaif,  1,  11515
+Smiti Singhal,  3,  11517
+Khushdev Pandit,  3,  11527
+Anuj Yadav,  5,  11536
+Shambhavi Sharma,  1,  11537
+Khushdev Pandit,  3,  11555
+Kartik Gupta,  1,  11601
+Ujjwal Garg,  1,  11611
+Vamshi Krishna Vannekala,  1,  11641
+Khushdev Pandit,  3,  11646
+Rohan Dhar,  5,  11651
+Bharat Goyal,  3,  11703
+Rishika Jain,  5,  11710
+Karan Baboota,  5,  11727
+Khushdev Pandit,  5,  11825
+Swatantra kumar nigam,  5,  11839
+Aditya Raj Singh,  1,  11906
+Smiti Singhal,  1,  11908
+Khushdev Pandit,  1,  11912
+Bhavya Jain,  3,  11916
+Khushdev Pandit,  1,  11932
+Anuj Yadav,  3,  11951
+Khushdev Pandit,  3,  12016
+Swaib Ilias Mazumder,  3,  12029
+Yuvraj Singh,  3,  12039
+Dhruv Mishra,  3,  12040
+Khushdev Pandit,  5,  12045
+Swati Jha,  3,  12055
+Gayam Shivakanth Reddy,  5,  12107
+Ankita Mahato,  5,  12149
+Karan Baboota,  3,  12157
+Anuj Yadav,  5,  12225
+Khushdev Pandit,  1,  12313
+Ujjwal Garg,  5,  12314
+Anuj Yadav,  1,  12337
+
+--------------------------------
