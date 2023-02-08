@@ -1,0 +1,28 @@
+Advantages of using OO
+1. Modularity--> Can make a lot of objects with single block of code
+2. Easier to understand code
+
+Advantages of using Dictionaries
+1. Easy to code
+2. Hashable
+
+
+Disadvantage of using OO
+1. High learning curve
+2. Not efficient for small programs
+
+Disadvantage of using dictionaries
+1. Not easy to iterate as compared to lists or tuples
+2. To create multiple objects, one would have to make multiple dictionaries which is not efficient
+
+Performance comparison for grading operation (give in each line: value of N; time taken by two approaches in seconds, and which is faster and by how much).
+1. N: 1000
+2. Time by OO: 0.12636590003967285
+3. Time by dictionary: 0.13332724571228027
+4. X is faster; fraction of time x took is: OOP is faster, 0.00012636590003967285
+
+Performance comparison for search operation (give in each line: value of N; time taken by two approaches in seconds, and which is faster and by how much).
+1. N: 1
+2. Time by OO: 0.0005011558532714844
+3. Time by dictionary: 0.048644065856933594
+4. X is faster; fraction of time x took is: OOP is faster, 0.0005011558532714844
