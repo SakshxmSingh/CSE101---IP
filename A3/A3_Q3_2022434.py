@@ -42,20 +42,21 @@ def F3():
     sent = string.split(".\n")
     string = ". ".join(sent)
     split_indices = [0]
-    for i in range(len(string)):
-        if string[i] == '.':
-            if i == len(string)-1:
-                if string[i-1]=='.' or string[i-1]==',':
-                    pass
-                else:
-                    split_indices.append(i+2)
-            else:
-                if string[i-1]=='.' or string[i-1]==',' or string[i+1]=='.' or string[i+1]==',':
-                    pass
-                else:
-                    split_indices.append(i+2)
-    sent = [string[i:j] for i,j in zip(split_indices, split_indices[1:]+[None])]
+    # for i in range(len(string)):
+    #     if string[i] == '.':
+    #         if i == len(string)-1:
+    #             if string[i-1]=='.' or string[i-1]==',':
+    #                 pass
+    #             else:
+    #                 split_indices.append(i+2)
+    #         else:
+    #             if string[i-1]=='.' or string[i-1]==',' or string[i+1]=='.' or string[i+1]==',':
+    #                 pass
+    #             else:
+    #                 split_indices.append(i+2)
+    # sent = [string[i:j] for i,j in zip(split_indices, split_indices[1:]+[None])]
     # sent = string.split(". ")
+    sent = string.split(". ")
     sent.pop()
     # print(sent, len(sent))
     count = 0

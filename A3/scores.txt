@@ -1,21 +1,40 @@
-
 file1
-score: 9.183520599250937
-most used words: ['you', 'the', 'i', 'of', 'that']
-random words: first, life, prevents, it, i, 
+score: 9.51685393258427
+most used words: ['the', 'you', 'of', 'i', 'that']
+random words: understood, moment, a, at, had, 
 ------------------------------
 file2
-score: 9.042857142857144
-most used words: ['the', 'it', 'you', 'and', 'of']
-random words: without, or, your, imagine, makes, 
+score: 9.542857142857144
+most used words: ['the', 'in', 'to', 'and', 'it']
+random words: disobeying, other, smitten, contest, turn, 
 ------------------------------
 file3
-score: 8.357365376056965
-most used words: ['the', 'love', 'is', 'they', 'and']
-random words: popped, margareta, talking, tatyana, the, 
+score: 8.45260347129506
+most used words: ['the', 'love', 'is', 'and', 'they']
+random words: to, only, they, girls, am, 
 ------------------------------
 file4
-score: 9.374452554744526
+score: 9.331595411887383
+most used words: ['the', 'i', 'my', 'is', 'in']
+random words: sanitizer, im, why, to, head, 
+------------------------------
+file1
+score: [9.51685393258427, 0.6404494382022472, 0.2808988764044944, 0.0, 0.011235955056179775, 0]
+most used words: ['the', 'you', 'i', 'of', 'age']
+random words: are, an, know, part, i, 
+------------------------------
+file2
+score: [9.542857142857144, 0.7714285714285715, 0.1523809523809524, 0.0, 0.0, 0]
+most used words: ['the', 'and', 'this', 'in', 'of']
+random words: indifference, simple, who, other, evil, 
+------------------------------
+file3
+score: [8.45260347129506, 0.6214953271028038, 0.16822429906542055, 0.2857142857142857, 0.0, 0]
+most used words: ['the', 'love', 'is', 'and', 'they']
+random words: tender, it, fresh, being, clean, 
+------------------------------
+file4
+score: [9.331595411887383, 0.6715328467153284, 0.24087591240875914, 0.14285714285714285, 0.0, 0]
 most used words: ['i', 'the', 'my', 'is', 'in']
-random words: dispenser, and, toiletpaper, we, unshaven, 
+random words: did, he, been, ive, mens, 
 ------------------------------

@@ -3,7 +3,9 @@
 # Section B,  Group 7
 # IP Assignment 03
 
-#--------------ques04------------------
+#--------------ques04 copy for q6------------------
+import time
+
 def cuttoff_decider(scale):
     diff_lust = []
     if len(scale)==1:
@@ -17,6 +19,13 @@ def cuttoff_decider(scale):
             diff_lust.append((diff, i-1, i))
         diff_lust.sort(key=lambda row: row[0], reverse=True)
         cuttoff = (scale[diff_lust[0][1]][1] + scale[diff_lust[0][2]][1])/2
+    # elif len(scale)==1:
+    #     cuttoff = scale[0]
+    # elif len(scale)==2: 
+    #     diff_lust.append((scale[1][1],0,0))
+    #     cuttoff = (scale[diff_lust[0][1]][1] + scale[diff_lust[0][2]][1])/2
+    # elif len(scale)==1:
+    #     cuttoff = scale[0]
     return cuttoff
 
 def func_1(cname,credits,assessments,data):
@@ -57,8 +66,6 @@ def func_3(rno_input,data):
         elif rno_input==i.rno:
             print("Total marks: ",i.total,"\nFinal Grade: ",i.grade)
 
-
-
 class Courses:
     def __init__(self, coursename, credits, assessments):
         self.coursename = coursename
@@ -73,18 +80,23 @@ class Courses:
             x = Student(i[0],i[1:])
             self.data.append(x)
         self.data.sort(key=lambda x : x.total, reverse=True)
+        
         for i in self.data: 
             if 82>=i.total>=78: a_scale.append((i.rno, i.total))
             elif 67>=i.total>=63: b_scale.append((i.rno, i.total))
             elif 52>=i.total>=48: c_scale.append((i.rno, i.total))
             elif 42>=i.total>=38: d_scale.append((i.rno, i.total))
-        
-        for i in self.data:
-            if i.total>=cuttoff_decider(a_scale): i.assign_grades('A')
-            elif cuttoff_decider(a_scale)>i.total>=cuttoff_decider(b_scale): i.assign_grades('B')
-            elif cuttoff_decider(b_scale)>i.total>=cuttoff_decider(c_scale): i.assign_grades('C')
-            elif cuttoff_decider(c_scale)>i.total>=cuttoff_decider(d_scale): i.assign_grades('D')
-            elif cuttoff_decider(d_scale)>i.total: i.assign_grades('F')
+            
+        start=time.time()
+        for j in range(1000):
+            for i in self.data:
+                if i.total>=cuttoff_decider(a_scale): i.assign_grades('A')
+                elif cuttoff_decider(a_scale)>i.total>=cuttoff_decider(b_scale): i.assign_grades('B')
+                elif cuttoff_decider(b_scale)>i.total>=cuttoff_decider(c_scale): i.assign_grades('C')
+                elif cuttoff_decider(c_scale)>i.total>=cuttoff_decider(d_scale): i.assign_grades('D')
+                elif cuttoff_decider(d_scale)>i.total: i.assign_grades('F')
+        end=time.time()
+        print(end-start)
 
 class Student:
     def __init__(self, rno, marks):
@@ -117,7 +129,11 @@ if __name__ == "__main__":
             elif int(x)==2:
                 func_2(IP.data)
             elif int(x)==3:
-                func_3(int(input("Enter rno: ")),IP.data)
+                roll=int(input("Enter rno: "))
+                start=time.time()
+                func_3(roll,IP.data)
+                end=time.time()
+                print(end-start)
             else:
                 break
         except ValueError:
