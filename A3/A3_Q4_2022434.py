@@ -57,8 +57,6 @@ def func_3(rno_input,data):
         elif rno_input==i.rno:
             print("Total marks: ",i.total,"\nFinal Grade: ",i.grade)
 
-
-
 class Courses:
     def __init__(self, coursename, credits, assessments):
         self.coursename = coursename

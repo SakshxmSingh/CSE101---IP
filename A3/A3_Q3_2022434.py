@@ -56,6 +56,9 @@ def F3():
     #                 split_indices.append(i+2)
     # sent = [string[i:j] for i,j in zip(split_indices, split_indices[1:]+[None])]
     # sent = string.split(". ")
+    # sent_terms = ['. ','! ','? ','.\'','!\'','?\'',]
+    # for i in range(1,len(string)):
+        
     sent = string.split(". ")
     sent.pop()
     # print(sent, len(sent))
