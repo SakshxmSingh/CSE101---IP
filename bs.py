@@ -621,5 +621,65 @@ code for any number system conversion from decimal
 
 # print(sumd('2345'))
 
-a = [1,2,3,4,5]
-print(str(a))
+# def isprime(i):
+#     j = 2
+#     isprime = True
+#     while(j <= i**(1/2)):
+#         if (i%j) == 0:
+#             isprime=False
+#         j = j + 1
+#     return isprime
+
+# def primefactors(x):
+#     i = 3
+#     while (i<= x):
+#         if isprime(i):
+#             if x%i == 0:
+#                 print(i,"is a factor")
+#                 while x%i == 0:
+#                     x = x//i
+#         i = i + 2
+
+# x=int(input("Give an Integer:"))
+# print("x: ", x)
+# if isprime(x):
+#     print(x, " is a prime")
+# else:
+#     #First repeatedly divide by 2 till it is odd no
+#     print("Prime factors are")
+#     if x%2==0:
+#         print("2 is a factor")
+#         while x%2 == 0:
+#             x = x // 2
+#     # Get prime factors of this odd no
+#     primefactors(x)
+
+
+# x = [(1,2),(5,2),(4,1),(1,1),(5,3),(5,4),(2,3)]
+# x.sort(key=lambda y: y[1], reverse=False)
+# print(x)
+
+L = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+dig = "213234"
+
+# def suml(sting):
+#     if len(sting)==1:
+#         return int(sting[0])
+#     else:
+#         temp = suml(sting[1:])
+#         return int(sting[0]) + temp
+
+# # print(suml(dig), sum(list(map(int,list(dig)))))
+
+# def tri(n):
+#     if n == 1:
+#         return [1]
+#     else:
+#         line = [1]
+#         prev = tri(n-1)
+#         for i in range(len(prev)-1):
+#             line.append(prev[i]+prev[i+1])
+#         line+=[1]
+#     return line
+
+# print(tri(int(input())))
